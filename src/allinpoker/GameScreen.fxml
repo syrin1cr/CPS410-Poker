@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" styleClass="background" stylesheets="@MainStyle.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="allinpoker.GameScreenController">
+  <children>
+    <AnchorPane id="upperLayout" prefHeight="300.0" prefWidth="800.0" styleClass="background" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <children>
+                <ImageView fx:id="tableImage" fitHeight="700.0" fitWidth="700.0" layoutX="55.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                   <image>
+                      <Image url="@../res/PokerTable.png" />
+                   </image>
+                </ImageView>
+                <Button fx:id="btnSitOut" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#sitOut" text="Sit Out" />
+                <Button fx:id="btnLeaveTable" layoutX="673.0" layoutY="14.0" mnemonicParsing="false" onAction="#leaveTable" text="Leave Table" />
+         <HBox layoutX="197.0" layoutY="328.0" prefHeight="100.0" prefWidth="150.0">
+             <children>
+             <VBox fx:id="p2" layoutX="260.0" layoutY="330.0" prefHeight="125.0" prefWidth="75.0" styleClass="playerInfo">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="100.0" styleClass="pName" text="Label" />
+                  <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="75.0">
+                     <children>
+                        <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" styleClass="pAvatar" />
+                     </children>
+                  </AnchorPane>
+                  <Label prefHeight="25.0" prefWidth="100.0" styleClass="pChips" text="Label" />
+               </children>
+            </VBox>
+                  <AnchorPane fx:id="c2" prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="100.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" styleClass="card1" />
+                        <ImageView fitHeight="100.0" fitWidth="75.0" layoutX="13.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" styleClass="card2" />
+                     </children>
+                  </AnchorPane>
+            </children>
+         </HBox>
+        <HBox layoutX="26.0" layoutY="272.0" prefHeight="100.0" prefWidth="150.0">
+            <children>
+            <VBox fx:id="p3" layoutX="80.0" layoutY="275.0" prefHeight="125.0" prefWidth="75.0" styleClass="playerInfo">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="100.0" styleClass="pName" text="Label" />
+                  <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="75.0">
+                     <children>
+                        <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" styleClass="pAvatar" />
+                     </children>
+                  </AnchorPane>
+                  <Label prefHeight="25.0" prefWidth="100.0" styleClass="pChips" text="Label" />
+               </children>
+            </VBox>
+                  <AnchorPane fx:id="c3" prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="100.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" styleClass="card1" />
+                        <ImageView fitHeight="100.0" fitWidth="75.0" layoutX="13.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" styleClass="card2" />
+                     </children>
+                  </AnchorPane>
+            </children>
+         </HBox>
+          <HBox layoutX="26.0" layoutY="115.0" prefHeight="100.0" prefWidth="150.0">
+              <children>
+            <VBox fx:id="p4" layoutX="80.0" layoutY="100.0" prefHeight="125.0" prefWidth="75.0" styleClass="playerInfo">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="100.0" styleClass="pName" text="Label" />
+                  <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="75.0">
+                     <children>
+                        <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" styleClass="pAvatar" />
+                     </children>
+                  </AnchorPane>
+                  <Label prefHeight="25.0" prefWidth="100.0" styleClass="pChips" text="Label" />
+               </children>
+            </VBox>
+                  <AnchorPane fx:id="c4" prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="100.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" styleClass="card1" />
+                        <ImageView fitHeight="100.0" fitWidth="75.0" layoutX="13.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" styleClass="card2" />
+                     </children>
+                  </AnchorPane>
+            </children>
+         </HBox>
+        <HBox layoutX="216.0" layoutY="62.0" prefHeight="100.0" prefWidth="150.0">
+            <children>
+            <VBox fx:id="p5" layoutX="260.0" layoutY="50.0" prefHeight="125.0" prefWidth="75.0" styleClass="playerInfo">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="100.0" styleClass="pName" text="Label" />
+                  <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="75.0">
+                     <children>
+                        <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" styleClass="pAvatar" />
+                     </children>
+                  </AnchorPane>
+                  <Label prefHeight="25.0" prefWidth="100.0" styleClass="pChips" text="Label" />
+               </children>
+            </VBox>
+                  <AnchorPane fx:id="c5" prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="100.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" styleClass="card1" />
+                        <ImageView fitHeight="100.0" fitWidth="75.0" layoutX="13.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" styleClass="card2" />
+                     </children>
+                  </AnchorPane>
+          </children>
+        </HBox>
+         <HBox layoutX="405.0" layoutY="70.0" prefHeight="100.0" prefWidth="150.0">
+           <children>
+                  <AnchorPane fx:id="c6" prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="100.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" styleClass="card1" />
+                        <ImageView fitHeight="100.0" fitWidth="75.0" layoutX="13.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" styleClass="card2" />
+                     </children>
+                  </AnchorPane>
+            <VBox fx:id="p6" layoutX="430.0" layoutY="50.0" prefHeight="125.0" prefWidth="75.0" styleClass="playerInfo">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="100.0" styleClass="pName" text="Label" />
+                  <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="75.0">
+                     <children>
+                        <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" styleClass="pAvatar" />
+                     </children>
+                  </AnchorPane>
+                  <Label prefHeight="25.0" prefWidth="100.0" styleClass="pChips" text="Label" />
+               </children>
+            </VBox>
+            </children>
+        </HBox>
+         <HBox layoutX="612.0" layoutY="122.0" prefHeight="100.0" prefWidth="150.0">
+             <children>
+                  <AnchorPane fx:id="c7" prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="100.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" styleClass="card1" />
+                        <ImageView fitHeight="100.0" fitWidth="75.0" layoutX="13.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" styleClass="card2">
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+            <VBox fx:id="p7" layoutX="650.0" layoutY="100.0" prefHeight="125.0" prefWidth="75.0" styleClass="playerInfo">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="100.0" styleClass="pName" text="Label" />
+                  <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="75.0">
+                     <children>
+                        <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" styleClass="pAvatar" />
+                     </children>
+                  </AnchorPane>
+                  <Label prefHeight="25.0" prefWidth="100.0" styleClass="pChips" text="Label" />
+               </children>
+            </VBox>
+          </children>
+          </HBox>
+          <HBox layoutX="612.0" layoutY="297.0" prefHeight="100.0" prefWidth="150.0">
+           <children>
+                  <AnchorPane fx:id="c8" prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="100.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" styleClass="card1" />
+                        <ImageView fitHeight="100.0" fitWidth="75.0" layoutX="13.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" styleClass="card2" />
+                     </children>
+                  </AnchorPane>
+            <VBox fx:id="p8" layoutX="620.0" layoutY="275.0" prefHeight="125.0" prefWidth="75.0" styleClass="playerInfo">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="100.0" styleClass="PName" text="Label" />
+                  <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="75.0">
+                     <children>
+                        <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" styleClass="pAvatar" />
+                     </children>
+                  </AnchorPane>
+                  <Label prefHeight="25.0" prefWidth="100.0" styleClass="pChips" text="Label" />
+               </children>
+            </VBox>
+            </children>
+            </HBox>
+            <HBox layoutX="386.0" layoutY="324.0" prefHeight="100.0" prefWidth="150.0">
+               <children>
+                  <AnchorPane fx:id="c1" prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="100.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" styleClass="card1" />
+                        <ImageView fitHeight="100.0" fitWidth="75.0" layoutX="13.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" styleClass="card2" />
+                     </children>
+                  </AnchorPane>
+                  <VBox fx:id="p1" prefHeight="125.0" prefWidth="75.0" styleClass="playerInfo">
+                     <children>
+                        <Label id="p1Name" prefHeight="25.0" prefWidth="100.0" styleClass="pName" text="Label" />
+                        <AnchorPane id="p1Images" minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="75.0">
+                           <children>
+                              <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" styleClass="pAvatar" />
+                           </children>
+                        </AnchorPane>
+                        <Label id="p1Chips" prefHeight="25.0" prefWidth="100.0" styleClass="pChips" text="Label" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox layoutX="313.0" layoutY="185.0" prefHeight="75.0" prefWidth="175.0">
+               <children>
+                  <ImageView id="flop1" fitHeight="75.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView id="flop2" fitHeight="75.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView id="flop3" fitHeight="75.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView id="turn1" fitHeight="75.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView id="river1" fitHeight="75.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </HBox>
+            </children>
+          </AnchorPane>
+    <AnchorPane id="lowerLayout" prefHeight="200.0" prefWidth="800.0" styleClass="background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <children>
+            <Button fx:id="btnFold" layoutX="525.0" layoutY="140.0" mnemonicParsing="false" onAction="#fold" prefHeight="40" prefWidth="75" text="Fold" />
+            <Button fx:id="btnRaise" layoutX="525.0" layoutY="80.0" mnemonicParsing="false" onAction="#raise" prefHeight="40" prefWidth="75" text="Raise" />
+            <Button fx:id="btnCall" layoutX="525.0" layoutY="20.0" mnemonicParsing="false" onAction="#call" prefHeight="40" prefWidth="75" text="Call" />
+            <Button fx:id="btnCheck" layoutX="525.0" layoutY="20.0" mnemonicParsing="false" onAction="#check" prefHeight="40" prefWidth="75" text="Check" />
+            <TextField fx:id="tfRaiseAmount" layoutX="625.0" layoutY="87.5" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="125.0" promptText="Amount" />
+            <TextField fx:id="tfChatInput" layoutY="172.0" onAction="#sendMessage" prefHeight="28.0" prefWidth="276.0" />
+            <TextArea fx:id="taChatBox" editable="false" layoutX="1.0" prefHeight="175.0" prefWidth="275.0" wrapText="true" />
+        </children>
+    </AnchorPane>
+  </children>
+</AnchorPane>

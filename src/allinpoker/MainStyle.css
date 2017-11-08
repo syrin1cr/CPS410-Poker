@@ -1,0 +1,131 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 27, 2017, 7:37:30 PM
+    Author     : Kaleyta
+*/
+
+.background {
+    -fx-background-image: url("../res/CoarseGrid.png");
+    -fx-background-repeat: repeat;
+    -fx-background-color:
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+}
+
+TextField{    
+    -fx-background-color:
+        rgba(255, 255, 255, 0.3),
+        linear-gradient(#4a5661, #AFAFAF 50%),
+        rgb(218, 226, 224);
+    -fx-padding: 6 10 4 10;
+    -fx-effect: innershadow( gaussian, #191d22 , 5, 0, 0, 2 );
+    -fx-font-size: 14;
+    -fx-font-family: "Century";
+}
+
+
+Button{
+    -fx-background-color: 
+        #090a0c,
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, #6D7C8C, #191d22);
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Century";
+    -fx-text-fill: linear-gradient(white, #AFAFAF);
+    -fx-font-size: 16px;
+    -fx-padding: 10 10 10 10;
+}
+Button:hover{
+    -fx-background-color:
+        #090a0c,
+        linear-gradient(#4a5661 0%, #1f2429 20%, #1f242a 100%),
+        radial-gradient(center 50% 0%, radius 100%, #B2B2B2, #2D343D);
+}
+
+    
+TextArea .content{
+    -fx-display-caret:true; 
+    -fx-background-color: rgb(218, 226, 224);
+    -fx-border-color: 
+        transparent transparent #AFAFAF transparent,
+        transparent transparent rgba(0, 0, 0, 0.6) transparent;
+    -fx-border-width: 2, 1;
+    -fx-border-insets: -1, 0; 
+}
+
+TableView{
+    -fx-background-color: radial-gradient(center 50% 50%, radius 80%, #6D7C8C, #191d22);
+    -fx-background-radius: 5,5,5,5;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.playerInfo{
+    -fx-background-color:#2D343D;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-opacity: .6;
+}
+.playerInfo .label{
+    -fx-font-family: "Century"; 
+    -fx-font-size: 12;
+    -fx-text-fill: #FFFFFF;
+    -fx-effect: dropshadow( one-pass-box , #212121, 9, 0.5 , 0 , 1 );    
+}
+
+.column-header{
+    -fx-background-color: #20262b;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+.column-header .label{
+    -fx-font-family: "Century";
+    -fx-text-fill: linear-gradient(white, #AFAFAF);
+    -fx-font-size: 14px;
+}
+
+.status{
+    -fx-font-family: "Arial";
+    -fx-font-size: 12px;
+    -fx-text-fill: #FFFFFF;
+}
+
+.title{
+    -fx-font-family: "Century"; 
+    -fx-font-size: 72;
+    -fx-text-fill: radial-gradient(center 50% 10%, radius 60%, #FFFFFF, #AFAFAF);
+    -fx-effect: dropshadow( one-pass-box , #212121, 9, 0.5 , 0 , 1 );
+}
+
+#upperLayout{
+    -fx-border-color: 
+        transparent transparent rgba(255, 255, 255, 0.06) transparent,
+        transparent transparent rgba(0, 0, 0, 0.6) transparent;
+    -fx-border-width: 5, 1;
+    -fx-border-insets: -1, 0; 
+}
+#lowerLayout{
+     -fx-background-color: rgba(255, 255, 255, 0.05);
+}
+
+#lobbyHeader{
+    -fx-font-size: 50;
+}
+
+#secondaryTitle{
+    -fx-font-size: 24;
+}
+
+#lblUserHeader{
+    -fx-font-family: "Century"; 
+    -fx-font-size: 24;
+    -fx-text-fill: radial-gradient(center 50% 10%, radius 60%, #FFFFFF, #AFAFAF);
+    -fx-effect: dropshadow( one-pass-box , #212121, 9, 0.5 , 0 , 1 );
+}
